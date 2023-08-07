@@ -36,8 +36,8 @@ public class MainSmartphone implements InterfacePajak {
     public void ListSmartphone() {
         System.out.println("Vendor : " + vendor);
         System.out.println("Tipe : " + tipe);
-        System.out.println("Harga : Rp" + String.format("%.2f", harga));
-        System.out.println("Harga Setelah Ditambah PPN : Rp" + String.format("%.2f", hitungHargaSetelahPPN()));}
+        System.out.println("Harga : Rp" + ( harga));
+        System.out.println("Harga Setelah Ditambah PPN : Rp" + ( hitungHargaSetelahPPN()));}
     
     public static void main(String[] args) {
         MainSmartphone samsungA51 = new MainSmartphone("Samsung", "A 51", 5000000.00);
