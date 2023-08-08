@@ -4,8 +4,6 @@
  */
 package UAS_PBO;
 
-import UAS_PBO.InterfacePajak;
-
 /**
  * @author Arvilanti Devani 22104410075
  * @author Nur Cindy Intan Fanderella 22104410098
@@ -14,8 +12,8 @@ import UAS_PBO.InterfacePajak;
  * @author Wasi'atul Jannah 22104410121
  */
 public class MainSmartphone implements InterfacePajak {
-    private String vendor, tipe;
-    private double harga;
+    String vendor, tipe;
+    double harga;
 
     public MainSmartphone(String vendor, String tipe, double harga) {
         this.vendor = vendor;
@@ -37,12 +35,12 @@ public class MainSmartphone implements InterfacePajak {
         System.out.println("Vendor : " + vendor);
         System.out.println("Tipe : " + tipe);
         System.out.println("Harga : Rp" + ( harga));
-        System.out.println("Harga Setelah Ditambah PPN : Rp" + ( hitungHargaSetelahPPN()));}
+        System.out.println("Harga Setelah PPN : Rp" + ( hitungHargaSetelahPPN()));}
     
     public static void main(String[] args) {
-        MainSmartphone samsungA51 = new MainSmartphone("Samsung", "A 51", 5000000.00);
-        MainSmartphone oppoReno5 = new MainSmartphone("Oppo", "Reno 5", 4400000.00);
-        MainSmartphone xiaomiA1 = new MainSmartphone("Xiaomi", "A1", 4100000.00);
+        MainSmartphone samsungA51 = new MainSmartphone("Samsung", "A 51", 5000000);
+        MainSmartphone oppoReno5 = new MainSmartphone("Oppo", "Reno 5", 4400000);
+        MainSmartphone xiaomiA1 = new MainSmartphone("Xiaomi", "A1", 4100000);
 
         samsungA51.ListSmartphone();
         oppoReno5.ListSmartphone();
