@@ -12,7 +12,7 @@ package UAS_PBO;
  * @author Eka Fardinal Hergitarestu 22104410119
  * @author Wasi'atul Jannah 22104410121
  */
-public interface InterfacePajak {
-    double PAJAK = 0.01; 
+public interface InterfacePajak { 
     double hitungHargaSetelahPPN();
+    double ppn = 0.01;
 }
