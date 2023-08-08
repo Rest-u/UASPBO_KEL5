@@ -28,7 +28,7 @@ public class MainSmartphone implements InterfacePajak {
         if (harga > 4000000 && harga < 4200000) {
             ppn = 0.01;} 
         else if (harga > 4200000 && harga <= 4500000) {
-            ppn = 0.05;}
+            ppn = 0.02;}
         else if (harga > 4500000) {
             ppn = 0.05;}
         return harga + (harga * ppn);}
